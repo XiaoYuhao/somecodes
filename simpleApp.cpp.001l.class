@@ -1,0 +1,182 @@
+Vtable for Point
+Point::_ZTV5Point: 4 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI5Point)
+16    (int (*)(...))__cxa_pure_virtual
+24    (int (*)(...))__cxa_pure_virtual
+
+Class Point
+   size=8 align=8
+   base size=8 base align=8
+Point (0x0x7f9ef3bb0960) 0 nearly-empty
+    vptr=((& Point::_ZTV5Point) + 16)
+
+Vtable for Point2d
+Point2d::_ZTV7Point2d: 4 entries
+0     (int (*)(...))0
+8     (int (*)(...))(& _ZTI7Point2d)
+16    (int (*)(...))Point2d::display
+24    (int (*)(...))Point2d::setzero
+
+Class Point2d
+   size=16 align=8
+   base size=16 base align=8
+Point2d (0x0x7f9ef3a591a0) 0
+    vptr=((& Point2d::_ZTV7Point2d) + 16)
+  Point (0x0x7f9ef3bb09c0) 0 nearly-empty
+      primary-for Point2d (0x0x7f9ef3a591a0)
+
+Vtable for Point3d
+Point3d::_ZTV7Point3d: 11 entries
+0     16
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI7Point3d)
+24    (int (*)(...))Point3d::display
+32    (int (*)(...))Point3d::setzero
+40    18446744073709551600
+48    18446744073709551600
+56    (int (*)(...))-16
+64    (int (*)(...))(& _ZTI7Point3d)
+72    (int (*)(...))Point3d::_ZTv0_n24_N7Point3d7displayEv
+80    (int (*)(...))Point3d::_ZTv0_n32_N7Point3d7setzeroEv
+
+VTT for Point3d
+Point3d::_ZTT7Point3d: 2 entries
+0     ((& Point3d::_ZTV7Point3d) + 24)
+8     ((& Point3d::_ZTV7Point3d) + 72)
+
+Class Point3d
+   size=32 align=8
+   base size=12 base align=8
+Point3d (0x0x7f9ef3a59208) 0
+    vptridx=0 vptr=((& Point3d::_ZTV7Point3d) + 24)
+  Point2d (0x0x7f9ef3a59270) 16 virtual
+      vptridx=8 vbaseoffset=-24 vptr=((& Point3d::_ZTV7Point3d) + 72)
+    Point (0x0x7f9ef3bb0de0) 16 nearly-empty
+        primary-for Point2d (0x0x7f9ef3a59270)
+
+Vtable for Vertex
+Vertex::_ZTV6Vertex: 10 entries
+0     16
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI6Vertex)
+24    (int (*)(...))Vertex::display
+32    0
+40    18446744073709551600
+48    (int (*)(...))-16
+56    (int (*)(...))(& _ZTI6Vertex)
+64    (int (*)(...))Vertex::_ZTv0_n24_N6Vertex7displayEv
+72    (int (*)(...))Point2d::setzero
+
+VTT for Vertex
+Vertex::_ZTT6Vertex: 2 entries
+0     ((& Vertex::_ZTV6Vertex) + 24)
+8     ((& Vertex::_ZTV6Vertex) + 64)
+
+Class Vertex
+   size=32 align=8
+   base size=16 base align=8
+Vertex (0x0x7f9ef3a593a8) 0
+    vptridx=0 vptr=((& Vertex::_ZTV6Vertex) + 24)
+  Point2d (0x0x7f9ef3a59410) 16 virtual
+      vptridx=8 vbaseoffset=-24 vptr=((& Vertex::_ZTV6Vertex) + 64)
+    Point (0x0x7f9ef3bdb180) 16 nearly-empty
+        primary-for Point2d (0x0x7f9ef3a59410)
+
+Vtable for Vertex3d
+Vertex3d::_ZTV8Vertex3d: 15 entries
+0     40
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI8Vertex3d)
+24    (int (*)(...))Vertex3d::display
+32    24
+40    (int (*)(...))-16
+48    (int (*)(...))(& _ZTI8Vertex3d)
+56    (int (*)(...))Vertex3d::_ZThn16_N8Vertex3d7displayEv
+64    (int (*)(...))Point3d::setzero
+72    18446744073709551592
+80    18446744073709551576
+88    (int (*)(...))-40
+96    (int (*)(...))(& _ZTI8Vertex3d)
+104   (int (*)(...))Vertex3d::_ZTv0_n24_N8Vertex3d7displayEv
+112   (int (*)(...))Point3d::_ZTv0_n32_N7Point3d7setzeroEv
+
+Construction vtable for Vertex (0x0x7f9ef3a594e0 instance) in Vertex3d
+Vertex3d::_ZTC8Vertex3d0_6Vertex: 10 entries
+0     40
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI6Vertex)
+24    (int (*)(...))Vertex::display
+32    0
+40    18446744073709551576
+48    (int (*)(...))-40
+56    (int (*)(...))(& _ZTI6Vertex)
+64    (int (*)(...))Vertex::_ZTv0_n24_N6Vertex7displayEv
+72    (int (*)(...))Point2d::setzero
+
+Construction vtable for Point3d (0x0x7f9ef3a595b0 instance) in Vertex3d
+Vertex3d::_ZTC8Vertex3d16_7Point3d: 11 entries
+0     24
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI7Point3d)
+24    (int (*)(...))Point3d::display
+32    (int (*)(...))Point3d::setzero
+40    18446744073709551592
+48    18446744073709551592
+56    (int (*)(...))-24
+64    (int (*)(...))(& _ZTI7Point3d)
+72    (int (*)(...))Point3d::_ZTv0_n24_N7Point3d7displayEv
+80    (int (*)(...))Point3d::_ZTv0_n32_N7Point3d7setzeroEv
+
+VTT for Vertex3d
+Vertex3d::_ZTT8Vertex3d: 7 entries
+0     ((& Vertex3d::_ZTV8Vertex3d) + 24)
+8     ((& Vertex3d::_ZTC8Vertex3d0_6Vertex) + 24)
+16    ((& Vertex3d::_ZTC8Vertex3d0_6Vertex) + 64)
+24    ((& Vertex3d::_ZTC8Vertex3d16_7Point3d) + 24)
+32    ((& Vertex3d::_ZTC8Vertex3d16_7Point3d) + 72)
+40    ((& Vertex3d::_ZTV8Vertex3d) + 104)
+48    ((& Vertex3d::_ZTV8Vertex3d) + 56)
+
+Class Vertex3d
+   size=56 align=8
+   base size=40 base align=8
+Vertex3d (0x0x7f9ef3be9000) 0
+    vptridx=0 vptr=((& Vertex3d::_ZTV8Vertex3d) + 24)
+  Vertex (0x0x7f9ef3a594e0) 0
+      primary-for Vertex3d (0x0x7f9ef3be9000)
+      subvttidx=8
+    Point2d (0x0x7f9ef3a59548) 40 virtual
+        vptridx=40 vbaseoffset=-24 vptr=((& Vertex3d::_ZTV8Vertex3d) + 104)
+      Point (0x0x7f9ef3bdb420) 40 nearly-empty
+          primary-for Point2d (0x0x7f9ef3a59548)
+  Point3d (0x0x7f9ef3a595b0) 16
+      subvttidx=24 vptridx=48 vptr=((& Vertex3d::_ZTV8Vertex3d) + 56)
+    Point2d (0x0x7f9ef3a59548) alternative-path
+
+Class A
+   size=4 align=4
+   base size=4 base align=4
+A (0x0x7f9ef3bdb720) 0
+
+Class B
+   size=8 align=4
+   base size=8 base align=4
+B (0x0x7f9ef3a59750) 0
+  A (0x0x7f9ef3bdb780) 0
+
+Class C
+   size=8 align=4
+   base size=8 base align=4
+C (0x0x7f9ef3a597b8) 0
+  A (0x0x7f9ef3bdb7e0) 0
+
+Class D
+   size=20 align=4
+   base size=20 base align=4
+D (0x0x7f9ef3be9070) 0
+  B (0x0x7f9ef3a59820) 0
+    A (0x0x7f9ef3bdb840) 0
+  C (0x0x7f9ef3a59888) 8
+    A (0x0x7f9ef3bdb8a0) 8
+

@@ -1,0 +1,98 @@
+Class Base
+   size=8 align=4
+   base size=8 base align=4
+Base (0x0x7f2175217960) 0
+
+Vtable for Derive1
+Derive1::_ZTV7Derive1: 4 entries
+0     12
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI7Derive1)
+24    (int (*)(...))Derive1::fun
+
+VTT for Derive1
+Derive1::_ZTT7Derive1: 1 entries
+0     ((& Derive1::_ZTV7Derive1) + 24)
+
+Class Derive1
+   size=24 align=8
+   base size=12 base align=8
+Derive1 (0x0x7f21750c01a0) 0
+    vptridx=0 vptr=((& Derive1::_ZTV7Derive1) + 24)
+  Base (0x0x7f21752179c0) 12 virtual
+      vbaseoffset=-24
+
+Vtable for Derive2
+Derive2::_ZTV7Derive2: 4 entries
+0     12
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI7Derive2)
+24    (int (*)(...))Derive2::foo
+
+VTT for Derive2
+Derive2::_ZTT7Derive2: 1 entries
+0     ((& Derive2::_ZTV7Derive2) + 24)
+
+Class Derive2
+   size=24 align=8
+   base size=12 base align=8
+Derive2 (0x0x7f21750c0270) 0
+    vptridx=0 vptr=((& Derive2::_ZTV7Derive2) + 24)
+  Base (0x0x7f2175217a80) 12 virtual
+      vbaseoffset=-24
+
+Vtable for Derive
+Derive::_ZTV6Derive: 17 entries
+0     40
+8     28
+16    16
+24    (int (*)(...))0
+32    (int (*)(...))(& _ZTI6Derive)
+40    (int (*)(...))Derive::fun
+48    (int (*)(...))Derive::foo
+56    18446744073709551600
+64    12
+72    (int (*)(...))-16
+80    (int (*)(...))(& _ZTI6Derive)
+88    (int (*)(...))Derive::_ZTv0_n32_N6Derive3funEv
+96    18446744073709551576
+104   18446744073709551604
+112   (int (*)(...))-40
+120   (int (*)(...))(& _ZTI6Derive)
+128   (int (*)(...))Derive::_ZTv0_n32_N6Derive3fooEv
+
+Construction vtable for Derive1 in Derive
+Derive::_ZTC6Derive16_7Derive1: 4 entries
+0     12
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI7Derive1)
+24    (int (*)(...))Derive1::fun
+
+Construction vtable for Derive2 in Derive
+Derive::_ZTC6Derive40_7Derive2: 4 entries
+0     18446744073709551604
+8     (int (*)(...))0
+16    (int (*)(...))(& _ZTI7Derive2)
+24    (int (*)(...))Derive2::foo
+
+VTT for Derive
+Derive::_ZTT6Derive: 5 entries
+0     ((& Derive::_ZTV6Derive) + 40)
+8     ((& Derive::_ZTV6Derive) + 88)
+16    ((& Derive::_ZTV6Derive) + 128)
+24    ((& Derive::_ZTC6Derive16_7Derive1) + 24)
+32    ((& Derive::_ZTC6Derive40_7Derive2) + 24)
+
+Class Derive
+   size=56 align=8
+   base size=12 base align=8
+Derive (0x0x7f217522f000) 0
+    vptridx=0 vptr=((& Derive::_ZTV6Derive) + 40)
+  Derive1 (0x0x7f21750c0340) 16 virtual
+      subvttidx=24 vptridx=8 vbaseoffset=-24 vptr=((& Derive::_ZTV6Derive) + 88)
+    Base (0x0x7f2175217b40) 28 virtual
+        vbaseoffset=-32
+  Derive2 (0x0x7f21750c03a8) 40 virtual
+      subvttidx=32 vptridx=16 vbaseoffset=-40 vptr=((& Derive::_ZTV6Derive) + 128)
+    Base (0x0x7f2175217b40) alternative-path
+
